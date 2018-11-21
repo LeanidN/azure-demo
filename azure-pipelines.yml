@@ -34,4 +34,7 @@ steps:
     artifactName: 'Demo EXE'
     targetPath: 'Demo/OkApp/OkApp/bin/Release'
 
+- task: DownloadPipelineArtifact@0
+  inputs:
+    targetPath: $(System.DefaultWorkingDirectory)
 
